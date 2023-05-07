@@ -1,1 +1,9 @@
-console.log('Conceptual Session');
+// primitive types
+
+/**
+ * number
+ * string
+ * boolean
+ * null
+ * undefined
+ * */
