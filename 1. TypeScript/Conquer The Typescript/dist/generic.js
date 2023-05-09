@@ -26,3 +26,11 @@ const me = {
     age: '30 years',
     mark: 110,
 };
+const myTest = 'name';
+const myTest1 = 'name';
+const data = {
+    name: 'Agni 2',
+    duration: 2000,
+    category: 'Action',
+};
+// console.log(data[myTest1]);

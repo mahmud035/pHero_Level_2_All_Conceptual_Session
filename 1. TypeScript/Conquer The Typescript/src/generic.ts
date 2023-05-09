@@ -49,3 +49,23 @@ const me: IMe<string, number> = {
   age: '30 years',
   mark: 110,
 };
+
+//* keyof type operator
+type MovieType = {
+  name: string;
+  duration: number;
+  category: string;
+};
+
+type test = 'name' | 'duration' | 'category';
+const myTest: test = 'name';
+
+type myMovies = keyof MovieType; // 'name' | 'duration' | 'category'
+const myTest1: myMovies = 'name';
+
+const data: MovieType = {
+  name: 'Agni 2',
+  duration: 2000,
+  category: 'Action',
+};
+// console.log(data[myTest1]);
