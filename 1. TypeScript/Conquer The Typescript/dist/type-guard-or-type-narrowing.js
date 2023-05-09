@@ -11,5 +11,11 @@ const doSomething = (a) => {
     }
     return a;
 };
-// console.log(doSomething(23));
-// console.log(doSomething('Hello'));
+const getInfo = (info) => {
+    if ('phone' in info) {
+        return `Type X: phone ${info.phone}`;
+    }
+    else if ('salary' in info) {
+        return `Type Y: salary ${info.salary}`;
+    }
+};
