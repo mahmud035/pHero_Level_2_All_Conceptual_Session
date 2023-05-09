@@ -21,3 +21,8 @@ const printInfo = (param1, param2) => {
 printInfo('John', 30);
 printInfo(112, true);
 printInfo('Alex', true);
+const me = {
+    name: 'John',
+    age: '30 years',
+    mark: 110,
+};

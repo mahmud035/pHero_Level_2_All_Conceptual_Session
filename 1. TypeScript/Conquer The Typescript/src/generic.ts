@@ -36,3 +36,16 @@ const printInfo = <T, U>(param1: T, param2: U): T => {
 printInfo<string, number>('John', 30);
 printInfo<number, boolean>(112, true);
 printInfo<string, boolean>('Alex', true);
+
+//* generic in interface
+interface IMe<T, U> {
+  name: string;
+  age: T;
+  mark?: U;
+}
+
+const me: IMe<string, number> = {
+  name: 'John',
+  age: '30 years',
+  mark: 110,
+};
