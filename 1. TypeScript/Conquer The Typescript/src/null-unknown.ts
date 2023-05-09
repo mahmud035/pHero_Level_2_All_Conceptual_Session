@@ -7,8 +7,8 @@ const myText = (text: string | null): void => {
   }
 };
 
-//myText(null);
-//myText("This is not a null value");
+// myText(null);
+// myText('This is not a null value');
 
 //* unknown type
 const guessSomething = (myGuess: unknown) => {
