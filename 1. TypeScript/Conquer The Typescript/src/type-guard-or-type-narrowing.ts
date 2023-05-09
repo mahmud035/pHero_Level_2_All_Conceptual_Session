@@ -36,3 +36,42 @@ const getInfo = (info: X | Y) => {
     return `Type Y: salary ${info.salary}`;
   }
 };
+
+//* 3. instanceof guard (using "instanceof" keyword)
+class P {
+  constructor(public position: string, public salary: number) {}
+
+  showDetails() {
+    console.log(`Position: ${this.position}`);
+  }
+}
+class Q extends P {
+  constructor(public position: string, public salary: number) {
+    super(position, salary);
+  }
+
+  showSalary() {
+    console.log(`Salary: ${this.salary}`);
+  }
+}
+
+class R extends P {
+  constructor(public position: string, public salary: number) {
+    super(position, salary);
+  }
+
+  showSalaryWithPosition() {
+    console.log(`Salary: ${this.salary}, Position: ${this.position}`);
+  }
+}
+
+function findInstance(person: P) {
+  if (person instanceof Q) {
+    person.showSalary();
+  } else if (person instanceof R) {
+    person.showSalaryWithPosition();
+  }
+}
+
+const p4 = new Q('developer', 100000);
+const p5 = new R('engineer', 300000);
