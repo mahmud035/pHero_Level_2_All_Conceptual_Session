@@ -25,3 +25,14 @@ const C: myGenericTuple<string, number, string> = ['hello', 111, 'john'];
 // console.log(A);
 // console.log(B);
 // console.log(C);
+
+//* generic in function
+
+const printInfo = <T, U>(param1: T, param2: U): T => {
+  console.log(`${param1} ${param2}`);
+  return param1;
+};
+
+printInfo<string, number>('John', 30);
+printInfo<number, boolean>(112, true);
+printInfo<string, boolean>('Alex', true);

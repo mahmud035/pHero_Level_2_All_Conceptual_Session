@@ -13,3 +13,11 @@ const C = ['hello', 111, 'john'];
 // console.log(A);
 // console.log(B);
 // console.log(C);
+//* generic in function
+const printInfo = (param1, param2) => {
+    console.log(`${param1} ${param2}`);
+    return param1;
+};
+printInfo('John', 30);
+printInfo(112, true);
+printInfo('Alex', true);
